@@ -25,7 +25,7 @@ function getGifts() {
                 var ratingData = results[i].rating;
                 var rating = $(sportDiv).append('<div>');
                 $("#gifs-here").prepend(sportDiv);
-                rating.append('<h5>Rating: ' + ratingData + '</h5>');
+                rating.append('<h5>Rating:' + ratingData + '</h5>');
                 var image = $('<img>')
                 rating.append(image);
                 image.addClass('sportImage').attr('src', results[i].images.fixed_height_still.url).attr(
@@ -36,7 +36,7 @@ function getGifts() {
 }
 
 $('#addSport').on('click', function (event) {
-    event.preventDefault();
+    event.preventDefault(event);
     var sportInput = $('#searchInput').val().trim();
     sports.push(sportInput);
     makeButtons();
