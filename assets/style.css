@@ -1,23 +1,27 @@
 body {
-    font-family:sans-serif;
-    background-color: #01FF70;
+    font-family: 'Ubuntu', sans-serif;
+    background-color:#FFDC00;
 }
-
 h5 {
     font-weight:bold;
     
 }
-
 button {
-	background-color: #3D9970;
+	background:#111111; 
 	border:none;
 	margin-right:3px;
 	margin-top:10px;
 	border-radius:3px;
-	color:white;
-	padding:5px;
+	color:#3D9970;
+	padding: 12px 20px;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: color 0.4s linear;
+	position: relative;
 }
-
+button:hover{
+	color: #ffffff;
+}
 #addSport {
 	background-color:red;
 	color:white;
@@ -25,5 +29,5 @@ button {
 	border-radius:3px;
 	color:white;
 	width:60px;
-
+	text-transform: capitalize;
 }
